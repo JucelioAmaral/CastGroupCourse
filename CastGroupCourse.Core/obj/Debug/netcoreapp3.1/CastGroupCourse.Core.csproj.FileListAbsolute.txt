@@ -4,6 +4,5 @@ C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.Core\bin\Debug\net
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.Core\obj\Debug\netcoreapp3.1\CastGroupCourse.Core.csprojAssemblyReference.cache
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.Core\obj\Debug\netcoreapp3.1\CastGroupCourse.Core.AssemblyInfoInputs.cache
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.Core\obj\Debug\netcoreapp3.1\CastGroupCourse.Core.AssemblyInfo.cs
-C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.Core\obj\Debug\netcoreapp3.1\CastGroupCourse.Core.csproj.CoreCompileInputs.cache
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.Core\obj\Debug\netcoreapp3.1\CastGroupCourse.Core.dll
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.Core\obj\Debug\netcoreapp3.1\CastGroupCourse.Core.pdb
