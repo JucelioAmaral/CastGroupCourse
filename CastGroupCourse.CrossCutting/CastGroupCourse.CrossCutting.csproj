@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -6,9 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CastGroupCourse.Core\CastGroupCourse.Core.csproj" />
-    <ProjectReference Include="..\CastGroupCourse.CrossCutting\CastGroupCourse.CrossCutting.csproj" />
     <ProjectReference Include="..\CastGroupCourse.Infra\CastGroupCourse.Infra.csproj" />
   </ItemGroup>
-
 
 </Project>

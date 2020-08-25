@@ -11,33 +11,6 @@
         "runtime": {
           "bin/placeholder/CastGroupCourse.Core.dll": {}
         }
-      },
-      "CastGroupCourse.CrossCutting/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "CastGroupCourse.Core": "1.0.0",
-          "CastGroupCourse.Infra": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/CastGroupCourse.CrossCutting.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CastGroupCourse.CrossCutting.dll": {}
-        }
-      },
-      "CastGroupCourse.Infra/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "CastGroupCourse.Core": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/CastGroupCourse.Infra.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CastGroupCourse.Infra.dll": {}
-        }
       }
     }
   },
@@ -46,23 +19,11 @@
       "type": "project",
       "path": "../CastGroupCourse.Core/CastGroupCourse.Core.csproj",
       "msbuildProject": "../CastGroupCourse.Core/CastGroupCourse.Core.csproj"
-    },
-    "CastGroupCourse.CrossCutting/1.0.0": {
-      "type": "project",
-      "path": "../CastGroupCourse.CrossCutting/CastGroupCourse.CrossCutting.csproj",
-      "msbuildProject": "../CastGroupCourse.CrossCutting/CastGroupCourse.CrossCutting.csproj"
-    },
-    "CastGroupCourse.Infra/1.0.0": {
-      "type": "project",
-      "path": "../CastGroupCourse.Infra/CastGroupCourse.Infra.csproj",
-      "msbuildProject": "../CastGroupCourse.Infra/CastGroupCourse.Infra.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "CastGroupCourse.Core >= 1.0.0",
-      "CastGroupCourse.CrossCutting >= 1.0.0",
-      "CastGroupCourse.Infra >= 1.0.0"
+      "CastGroupCourse.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -72,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rtostes\\source\\repos\\CastGroupCourse\\CastGroupCourse\\CastGroupCourse.csproj",
-      "projectName": "CastGroupCourse",
-      "projectPath": "C:\\Users\\rtostes\\source\\repos\\CastGroupCourse\\CastGroupCourse\\CastGroupCourse.csproj",
+      "projectUniqueName": "C:\\Users\\rtostes\\source\\repos\\CastGroupCourse\\CastGroupCourse.Infra\\CastGroupCourse.Infra.csproj",
+      "projectName": "CastGroupCourse.Infra",
+      "projectPath": "C:\\Users\\rtostes\\source\\repos\\CastGroupCourse\\CastGroupCourse.Infra\\CastGroupCourse.Infra.csproj",
       "packagesPath": "C:\\Users\\rtostes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rtostes\\source\\repos\\CastGroupCourse\\CastGroupCourse\\obj\\",
+      "outputPath": "C:\\Users\\rtostes\\source\\repos\\CastGroupCourse\\CastGroupCourse.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -97,12 +58,6 @@
           "projectReferences": {
             "C:\\Users\\rtostes\\source\\repos\\CastGroupCourse\\CastGroupCourse.Core\\CastGroupCourse.Core.csproj": {
               "projectPath": "C:\\Users\\rtostes\\source\\repos\\CastGroupCourse\\CastGroupCourse.Core\\CastGroupCourse.Core.csproj"
-            },
-            "C:\\Users\\rtostes\\source\\repos\\CastGroupCourse\\CastGroupCourse.CrossCutting\\CastGroupCourse.CrossCutting.csproj": {
-              "projectPath": "C:\\Users\\rtostes\\source\\repos\\CastGroupCourse\\CastGroupCourse.CrossCutting\\CastGroupCourse.CrossCutting.csproj"
-            },
-            "C:\\Users\\rtostes\\source\\repos\\CastGroupCourse\\CastGroupCourse.Infra\\CastGroupCourse.Infra.csproj": {
-              "projectPath": "C:\\Users\\rtostes\\source\\repos\\CastGroupCourse\\CastGroupCourse.Infra\\CastGroupCourse.Infra.csproj"
             }
           }
         }
@@ -126,9 +81,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

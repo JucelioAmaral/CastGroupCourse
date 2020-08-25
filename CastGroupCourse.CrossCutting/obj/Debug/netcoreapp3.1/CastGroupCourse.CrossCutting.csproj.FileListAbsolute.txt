@@ -1,0 +1,14 @@
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.CrossCutting\bin\Debug\netcoreapp3.1\CastGroupCourse.CrossCutting.deps.json
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.CrossCutting\bin\Debug\netcoreapp3.1\CastGroupCourse.CrossCutting.dll
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.CrossCutting\bin\Debug\netcoreapp3.1\CastGroupCourse.CrossCutting.pdb
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.CrossCutting\obj\Debug\netcoreapp3.1\CastGroupCourse.CrossCutting.csprojAssemblyReference.cache
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.CrossCutting\obj\Debug\netcoreapp3.1\CastGroupCourse.CrossCutting.AssemblyInfoInputs.cache
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.CrossCutting\obj\Debug\netcoreapp3.1\CastGroupCourse.CrossCutting.AssemblyInfo.cs
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.CrossCutting\obj\Debug\netcoreapp3.1\CastGroupCourse.CrossCutting.csproj.CoreCompileInputs.cache
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.CrossCutting\obj\Debug\netcoreapp3.1\CastGroupCourse.CrossCutting.dll
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.CrossCutting\obj\Debug\netcoreapp3.1\CastGroupCourse.CrossCutting.pdb
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.CrossCutting\bin\Debug\netcoreapp3.1\CastGroupCourse.Core.dll
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.CrossCutting\bin\Debug\netcoreapp3.1\CastGroupCourse.Infra.dll
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.CrossCutting\bin\Debug\netcoreapp3.1\CastGroupCourse.Core.pdb
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.CrossCutting\bin\Debug\netcoreapp3.1\CastGroupCourse.Infra.pdb
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.CrossCutting\obj\Debug\netcoreapp3.1\CastGroupCourse.CrossCutting.csproj.CopyComplete

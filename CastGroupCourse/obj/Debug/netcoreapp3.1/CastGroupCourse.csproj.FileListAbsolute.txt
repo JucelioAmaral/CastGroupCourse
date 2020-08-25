@@ -1,0 +1,5 @@
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\obj\Debug\netcoreapp3.1\CastGroupCourse.csprojAssemblyReference.cache
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\obj\Debug\netcoreapp3.1\CastGroupCourse.AssemblyInfoInputs.cache
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\obj\Debug\netcoreapp3.1\CastGroupCourse.AssemblyInfo.cs
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\obj\Debug\netcoreapp3.1\CastGroupCourse.csproj.CoreCompileInputs.cache
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\obj\Debug\netcoreapp3.1\CastGroupCourse.MvcApplicationPartsAssemblyInfo.cache

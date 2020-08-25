@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "CastGroupCourse.CrossCutting/1.0.0": {
+        "dependencies": {
+          "CastGroupCourse.Core": "1.0.0",
+          "CastGroupCourse.Infra": "1.0.0"
+        },
+        "runtime": {
+          "CastGroupCourse.CrossCutting.dll": {}
+        }
+      },
+      "CastGroupCourse.Core/1.0.0": {
+        "runtime": {
+          "CastGroupCourse.Core.dll": {}
+        }
+      },
+      "CastGroupCourse.Infra/1.0.0": {
+        "dependencies": {
+          "CastGroupCourse.Core": "1.0.0"
+        },
+        "runtime": {
+          "CastGroupCourse.Infra.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CastGroupCourse.CrossCutting/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CastGroupCourse.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CastGroupCourse.Infra/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
