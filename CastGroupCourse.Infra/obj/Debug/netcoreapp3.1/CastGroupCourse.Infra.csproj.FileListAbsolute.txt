@@ -4,9 +4,9 @@ C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.Infra\bin\Debug\ne
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.Infra\obj\Debug\netcoreapp3.1\CastGroupCourse.Infra.csprojAssemblyReference.cache
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.Infra\obj\Debug\netcoreapp3.1\CastGroupCourse.Infra.AssemblyInfoInputs.cache
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.Infra\obj\Debug\netcoreapp3.1\CastGroupCourse.Infra.AssemblyInfo.cs
-C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.Infra\obj\Debug\netcoreapp3.1\CastGroupCourse.Infra.csproj.CoreCompileInputs.cache
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.Infra\obj\Debug\netcoreapp3.1\CastGroupCourse.Infra.dll
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.Infra\obj\Debug\netcoreapp3.1\CastGroupCourse.Infra.pdb
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.Infra\bin\Debug\netcoreapp3.1\CastGroupCourse.Core.dll
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.Infra\bin\Debug\netcoreapp3.1\CastGroupCourse.Core.pdb
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.Infra\obj\Debug\netcoreapp3.1\CastGroupCourse.Infra.csproj.CopyComplete
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse.Infra\obj\Debug\netcoreapp3.1\CastGroupCourse.Infra.csproj.CoreCompileInputs.cache
