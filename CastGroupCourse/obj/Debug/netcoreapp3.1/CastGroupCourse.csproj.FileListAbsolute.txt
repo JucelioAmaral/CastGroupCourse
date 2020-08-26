@@ -1,8 +1,6 @@
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\obj\Debug\netcoreapp3.1\CastGroupCourse.csprojAssemblyReference.cache
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\obj\Debug\netcoreapp3.1\CastGroupCourse.AssemblyInfoInputs.cache
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\obj\Debug\netcoreapp3.1\CastGroupCourse.AssemblyInfo.cs
-C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\obj\Debug\netcoreapp3.1\CastGroupCourse.csproj.CoreCompileInputs.cache
-C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\obj\Debug\netcoreapp3.1\CastGroupCourse.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -28,7 +26,6 @@ C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\bin\Debug\netcorea
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\bin\Debug\netcoreapp3.1\CastGroupCourse.Core.pdb
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\bin\Debug\netcoreapp3.1\CastGroupCourse.CrossCutting.pdb
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\bin\Debug\netcoreapp3.1\CastGroupCourse.Infra.pdb
-C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\obj\Debug\netcoreapp3.1\CastGroupCourse.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\obj\Debug\netcoreapp3.1\CastGroupCourse.RazorTargetAssemblyInfo.cache
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\obj\Debug\netcoreapp3.1\CastGroupCourse.csproj.CopyComplete
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\obj\Debug\netcoreapp3.1\staticwebassets\CastGroupCourse.StaticWebAssets.Manifest.cache
@@ -36,3 +33,10 @@ C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\obj\Debug\netcorea
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\obj\Debug\netcoreapp3.1\CastGroupCourse.dll
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\obj\Debug\netcoreapp3.1\CastGroupCourse.pdb
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\obj\Debug\netcoreapp3.1\CastGroupCourse.genruntimeconfig.cache
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\obj\Debug\netcoreapp3.1\CastGroupCourse.csproj.CoreCompileInputs.cache
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\obj\Debug\netcoreapp3.1\CastGroupCourse.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\obj\Debug\netcoreapp3.1\CastGroupCourse.MvcApplicationPartsAssemblyInfo.cache

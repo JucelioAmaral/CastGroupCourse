@@ -24,17 +24,17 @@ namespace CastGroupCourse.Core.CourseAgg.Service
             return _courseRepositorie.GetCourseId(Id);
         }
 
-        public void InsertCourse(Course SubjectDescription, Course StartDate, Course EndDate, Course NumberStudents, Course CategoryId)
+        public void InsertCourse(Course NewCourse)
         {
-            _courseRepositorie.InsertCourse( SubjectDescription,  StartDate,  EndDate,  NumberStudents,  CategoryId);
+            _courseRepositorie.InsertCourse(NewCourse);
         }
         public void DeleteCourse(int Id)
         {
             _courseRepositorie.DeleteCoursey(Id);
         }
-        public void UpdateCourse(Course SubjectDescription, Course StartDate, Course EndDate, Course NumberStudents, Course CategoryId)
+        public void UpdateCourse(Course NewCourse)
         {
-            _courseRepositorie.UpdateCourse(SubjectDescription, StartDate, EndDate, NumberStudents, CategoryId);
+            _courseRepositorie.UpdateCourse(NewCourse);
         }
     }
 }

@@ -13,7 +13,7 @@ namespace CastGroupCourse.Infra.Data.Repositories
     public class CategoryRepositorie : ICategory
     {
         private readonly IDbConnection conexao;
-        public CategoryRepositorie(IConfiguration conf) => conexao = new SqlConnection("Data Source=localhost,1433;Initial Catalog=;Persist Security Info=False;User ID=;Password=;MultipleActiveResultSets=False;");
+        public CategoryRepositorie(IConfiguration conf) => conexao = new SqlConnection("Data Source=localhost,1433;Initial Catalog=CastGroup;Persist Security Info=False;User ID=;Password=;MultipleActiveResultSets=False;");
 
         public List<Category> GetCategory()
         {
@@ -25,8 +25,8 @@ namespace CastGroupCourse.Infra.Data.Repositories
         }
         public void InsertCategory(Category Description)
         {
-            this.conexao.Execute(@"INSERT INTO Category(Description,Id) VALUES (@Description,@Id)",
-             new { Description = Description.Description, Id = Description.Id });
+            this.conexao.Execute(@"INSERT Category(Description) VALUES (@Description)",
+             new { Description = Description.Description });
         }
         public void DeleteCategory(int Id)
         {

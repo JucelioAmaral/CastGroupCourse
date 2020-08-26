@@ -9,9 +9,9 @@ namespace CastGroupCourse.Core.CourseAgg.Interfaces.Repositories
     {
         List<Course> GetCourse();
         Course GetCourseId(int Id);
-        void InsertCourse(Course SubjectDescription, Course StartDate, Course EndDate, Course NumberStudents, Course CategoryId);
+        void InsertCourse(Course NewCourse);
         void DeleteCoursey(int Id);
-        void UpdateCourse(Course SubjectDescription, Course StartDate, Course EndDate, Course NumberStudents, Course CategoryId);
+        void UpdateCourse(Course NewCourse);
     }
 
 

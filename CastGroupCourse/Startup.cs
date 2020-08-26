@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CastGroupCourse.CrossCutting;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -10,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 
 namespace CastGroupCourse
 {
@@ -26,6 +28,23 @@ namespace CastGroupCourse
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.RegisterServices();
+            services.AddCors();
+            object p = services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1",
+                    new OpenApiInfo
+                    {
+                        Title = "Cast Group Course",
+                        Version = "v1",
+                        Description = "API REST criada com o ASP.NET Core 3.1",
+                        Contact = new OpenApiContact
+                        {
+                            Name = "Rogério Tostes",
+                            Url = new Uri("https://github.com/RogerioTostes/")
+                        }
+                    });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -35,10 +54,16 @@ namespace CastGroupCourse
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseSwagger();
+            app.UseSwaggerUI(c => {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My GitHub Library V1");
+            });
 
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
             app.UseAuthorization();
 
