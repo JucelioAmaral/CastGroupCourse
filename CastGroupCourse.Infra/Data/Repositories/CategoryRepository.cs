@@ -11,24 +11,14 @@ using Slapper;
 
 namespace CastGroupCourse.Infra.Data.Repositories
 {
-    public class CategoryRepositorie : ICategory
+    public class CategoryRepository : ICategory
     {
         private readonly IDbConnection conexao;
-        public CategoryRepositorie(IConfiguration conf) => conexao = new SqlConnection("Data Source=localhost,1433;Initial Catalog=CastGroup;Persist Security Info=False;User ID=tmds;Password=tmds;MultipleActiveResultSets=False;");
+        public CategoryRepository(IConfiguration conf) => conexao = new SqlConnection("Data Source=localhost,1433;Initial Catalog=CastGroup;Persist Security Info=False;User ID=tmds;Password=tmds;MultipleActiveResultSets=False;");
 
         public List<Category> GetCategory()
         {
-            var dados = conexao.Query<dynamic>(
-                        "SELECT R.Id,R.Description,E.SubjectDescription as Courses_SubjectDescription,E.StartDate as Courses_StartDate,E.EndDate as Courses_EndDate,E.NumberStudents as Courses_NumberStudents,E.Id as Courses_Id " +
-                        "FROM dbo.Category R " +
-                        "INNER JOIN dbo.Course E ON E.IdCategory = R.id");
-            AutoMapper.Configuration.AddIdentifier(
-                typeof(Category), "Id");
-            AutoMapper.Configuration.AddIdentifier(
-                typeof(Course), "Id");
-            List<Category> categories = (AutoMapper.MapDynamic<Category>(dados)
-                as IEnumerable<Category>).ToList();
-            return categories;
+            return this.conexao.Query<Category>("SELECT * FROM Category").ToList();
 
         }
         public Category GetCategoryId(int Id)
@@ -46,7 +36,7 @@ namespace CastGroupCourse.Infra.Data.Repositories
         }
         public void UpdateCategory(Category Description)
         {
-            this.conexao.Execute("UPDATE Category SET Description=@Descriptiong WHERE Id=" + Description.Id,
+            this.conexao.Execute("UPDATE Category SET Description=@Description WHERE Id=" + Description.Id,
            new { Description = Description.Description });
         }
     }

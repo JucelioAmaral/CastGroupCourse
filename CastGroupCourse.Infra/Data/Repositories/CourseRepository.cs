@@ -11,13 +11,13 @@ using System.Text;
 
 namespace CastGroupCourse.Infra.Data.Repositories
 {
-    public class CourseRepositorie : ICourse
+    public class CourseRepository : ICourse
     {
         private readonly IDbConnection conexao;
-        public CourseRepositorie(IConfiguration conf) => conexao = new SqlConnection("Data Source=localhost,1433;Initial Catalog=CastGroup;Persist Security Info=False;User ID=tmds;Password=tmds;MultipleActiveResultSets=False;");
+        public CourseRepository(IConfiguration conf) => conexao = new SqlConnection("Data Source=localhost,1433;Initial Catalog=CastGroup;Persist Security Info=False;User ID=tmds;Password=tmds;MultipleActiveResultSets=False;");
         public List<Course> GetCourse()
         {
-            return this.conexao.Query<Course>("SELECT E.Id,E.SubjectDescription,E.StartDate,E.EndDate,E.NumberStudents,R.Description as Category FROM dbo.Course E INNER JOIN dbo.Category R ON E.IdCategory = R.Id     ").ToList();
+            return this.conexao.Query<Course>("SELECT E.Id,E.SubjectDescription,E.StartDate,E.EndDate,E.NumberStudents,R.Description as Category FROM dbo.Course E INNER JOIN dbo.Category R ON E.IdCategory = R.Id ").ToList();
         }
         public Course GetCourseId(int Id)
         {

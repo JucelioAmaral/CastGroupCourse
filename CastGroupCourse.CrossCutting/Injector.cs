@@ -1,4 +1,7 @@
-﻿using CastGroupCourse.Core.CourseAgg.Interfaces.Repositories;
+﻿using CastGroupCourse.Core.Aggregate.CourseAgg.Interfaces.Repositories;
+using CastGroupCourse.Core.Aggregate.CourseAgg.Interfaces.Services;
+using CastGroupCourse.Core.Aggregate.CourseAgg.Services;
+using CastGroupCourse.Core.CourseAgg.Interfaces.Repositories;
 using CastGroupCourse.Core.CourseAgg.Interfaces.Services;
 using CastGroupCourse.Core.CourseAgg.Service;
 using CastGroupCourse.Infra.Data.Repositories;
@@ -15,9 +18,13 @@ namespace CastGroupCourse.CrossCutting
         {
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<ICourseService, CourseService>();
+            services.AddScoped<ICategoryAndCourseService, CategoryAndCourseService>();
 
-            services.AddScoped<ICategory, CategoryRepositorie>();
-            services.AddScoped<ICourse, CourseRepositorie>();
+            services.AddScoped<ICategory, CategoryRepository>();
+            services.AddScoped<ICourse, CourseRepository>();
+            services.AddScoped<ICategoryAndCourse, CategoryAndCourseRepository>();
+
+           
         }
     }
 }

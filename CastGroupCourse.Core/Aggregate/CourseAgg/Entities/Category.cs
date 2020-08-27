@@ -15,6 +15,6 @@ namespace CastGroupCourse.Core.CourseAgg.Entities
         [FromQuery(Name = "Description")]
         [Required]
         public string Description { get; set; }
-        public List<Course> Courses { get; set; }
+ 
     }
 }

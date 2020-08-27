@@ -8,33 +8,33 @@ namespace CastGroupCourse.Core.CourseAgg.Service
     public class CategoryService : ICategoryService
     {
 
-        private readonly ICategory _categoryRepositorie;
+        private readonly ICategory _categoryRepository;
         public CategoryService(ICategory category)
         {
-            _categoryRepositorie = category;
+            _categoryRepository = category;
         }
 
         public List<Category> GetCategory()
         {
-            return _categoryRepositorie.GetCategory();
+            return _categoryRepository.GetCategory();
         }
 
         public Category GetCategoryId(int Id)
         {
-            return _categoryRepositorie.GetCategoryId(Id);
+            return _categoryRepository.GetCategoryId(Id);
         }
 
         public void InsertCategory(Category Description)
         {
-             _categoryRepositorie.InsertCategory(Description);
+            _categoryRepository.InsertCategory(Description);
         }
         public void DeleteCategory(int Id)
         {
-             _categoryRepositorie.DeleteCategory(Id);
+            _categoryRepository.DeleteCategory(Id);
         }
         public void UpdateCategory(Category Description)
         {
-             _categoryRepositorie.UpdateCategory(Description);
+            _categoryRepository.UpdateCategory(Description);
         }
     }
 }

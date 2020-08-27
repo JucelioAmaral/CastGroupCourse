@@ -10,19 +10,19 @@ namespace CastGroupCourse.Core.CourseAgg.Service
 {
     public class CourseService : ICourseService
     {
-        private readonly ICourse _courseRepositorie;
+        private readonly ICourse _courseRepository;
         public CourseService(ICourse course)
         {
-            _courseRepositorie = course;
+            _courseRepository = course;
         }
         public List<Course> GetCourse()
         {
-            return _courseRepositorie.GetCourse();
+            return _courseRepository.GetCourse();
         }
 
         public Course GetCourseId(int Id)
         {
-            return _courseRepositorie.GetCourseId(Id);
+            return _courseRepository.GetCourseId(Id);
         }
 
         public ResponseObject<Course> InsertCourse(Course NewCourse)
@@ -31,18 +31,18 @@ namespace CastGroupCourse.Core.CourseAgg.Service
             {
                 return new ResponseObject<Course>(false, "A data de inicio deve ser maior que a atual");
             }
-            if (_courseRepositorie.GetCourseValidationDate(NewCourse))
+            if (_courseRepository.GetCourseValidationDate(NewCourse))
             {
                 return new ResponseObject<Course>(false, "Existe(m) curso(s) planejados(s) dentro do período informado.");
             }
 
-            _courseRepositorie.InsertCourse(NewCourse);
+            _courseRepository.InsertCourse(NewCourse);
 
             return new ResponseObject<Course>(true, "Criado com sucesso!", obj: NewCourse);
         }
         public void DeleteCourse(int Id)
         {
-            _courseRepositorie.DeleteCoursey(Id);
+            _courseRepository.DeleteCoursey(Id);
         }
         public ResponseObject<Course> UpdateCourse(Course NewCourse)
         {
@@ -50,12 +50,12 @@ namespace CastGroupCourse.Core.CourseAgg.Service
             {
                 return new ResponseObject<Course>(false, "A data de inicio deve ser maior que a atual");
             }
-            if (_courseRepositorie.GetCourseValidationDate(NewCourse))
+            if (_courseRepository.GetCourseValidationDate(NewCourse))
             {
                 return new ResponseObject<Course>(false, "Existe(m) curso(s) planejados(s) dentro do período informado.");
             }
 
-            _courseRepositorie.UpdateCourse(NewCourse);
+            _courseRepository.UpdateCourse(NewCourse);
 
             return new ResponseObject<Course>(true, "Atualizado com sucesso!", obj: NewCourse);
         }
