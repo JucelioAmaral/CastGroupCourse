@@ -545,6 +545,15 @@
           }
         }
       },
+      "Slapper.AutoMapper/2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Slapper.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Slapper.dll": {}
+        }
+      },
       "System.AppContext/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -1797,6 +1806,19 @@
         "runtimes/win-x86/native/sni.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Slapper.AutoMapper/2.0.1": {
+      "sha512": "FJ7Vh2SaBGdJ4ARgtXm2RPdct9cgCGyDJhgoe2vBwZRWKbMRAt/py7GaMUdza3C/GkEdyiLxqJhnfsYjA/q5oQ==",
+      "type": "package",
+      "path": "slapper.automapper/2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net46/Slapper.dll",
+        "lib/netstandard2.1/Slapper.dll",
+        "slapper.automapper.2.0.1.nupkg.sha512",
+        "slapper.automapper.nuspec"
       ]
     },
     "System.AppContext/4.1.0": {
@@ -4352,6 +4374,7 @@
     ".NETCoreApp,Version=v3.1": [
       "CastGroupCourse.Core >= 1.0.0",
       "Dapper >= 2.0.35",
+      "Slapper.AutoMapper >= 2.0.1",
       "System.Data.SqlClient >= 4.8.2"
     ]
   },
@@ -4403,6 +4426,10 @@
           "Dapper": {
             "target": "Package",
             "version": "[2.0.35, )"
+          },
+          "Slapper.AutoMapper": {
+            "target": "Package",
+            "version": "[2.0.1, )"
           },
           "System.Data.SqlClient": {
             "target": "Package",

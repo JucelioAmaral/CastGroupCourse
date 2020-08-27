@@ -40,3 +40,4 @@ C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\bin\Debug\netcorea
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\obj\Debug\netcoreapp3.1\CastGroupCourse.csproj.CoreCompileInputs.cache
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\obj\Debug\netcoreapp3.1\CastGroupCourse.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\obj\Debug\netcoreapp3.1\CastGroupCourse.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\bin\Debug\netcoreapp3.1\Slapper.dll

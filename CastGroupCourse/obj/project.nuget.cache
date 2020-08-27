@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "isGaQfYruxPYHkZVsbinmtWdnMEn9RW8YAobI7qA/HhxMnKhY50MLJ3+92o0ssypKeAokkPmtAq8scWkGqd1Xw==",
+  "dgSpecHash": "kZx68O1R2GGJ7wtuXFDg1SQobEavR53lnHgdDFFs2Dv50Hh1GFUnLZ44sLvO4i3ndYQnMlef1czuhHT8J7wXng==",
   "success": true,
   "projectFilePath": "C:\\Users\\rtostes\\source\\repos\\CastGroupCourse\\CastGroupCourse\\CastGroupCourse.csproj",
   "expectedPackageFiles": [
@@ -45,6 +45,7 @@
     "C:\\Users\\rtostes\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\rtostes\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\rtostes\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\rtostes\\.nuget\\packages\\slapper.automapper\\2.0.1\\slapper.automapper.2.0.1.nupkg.sha512",
     "C:\\Users\\rtostes\\.nuget\\packages\\swashbuckle.aspnetcore\\5.5.1\\swashbuckle.aspnetcore.5.5.1.nupkg.sha512",
     "C:\\Users\\rtostes\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.5.1\\swashbuckle.aspnetcore.swagger.5.5.1.nupkg.sha512",
     "C:\\Users\\rtostes\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.5.1\\swashbuckle.aspnetcore.swaggergen.5.5.1.nupkg.sha512",

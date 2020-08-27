@@ -12,9 +12,6 @@ namespace CastGroupCourse.Core.CourseAgg.Interfaces.Repositories
         void InsertCourse(Course NewCourse);
         void DeleteCoursey(int Id);
         void UpdateCourse(Course NewCourse);
-    }
-
-
-   
+    }    
   
 }

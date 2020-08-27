@@ -17,7 +17,17 @@ namespace CastGroupCourse.Infra.Data.Repositories
         public CourseRepositorie(IConfiguration conf) => conexao = new SqlConnection("Data Source=localhost,1433;Initial Catalog=CastGroup;Persist Security Info=False;User ID=tmds;Password=tmds;MultipleActiveResultSets=False;");
         public List<Course> GetCourse()
         {
-            return this.conexao.Query<Course>("SELECT * FROM Course").ToList();
+            //return (List<Course>)conexao.Query<Course, Category, Course>(
+            //        "SELECT * " +
+            //        "FROM dbo.Course E " +
+            //        "INNER JOIN dbo.Category R ON E.IdCategory = R.Id",                   
+            //        map: (course, category) =>
+            //        {
+            //            course.Category = category;
+            //            return course;
+            //        },
+            //        splitOn: "Id,IdCategory");
+            return this.conexao.Query<Course>("SELECT E.Id,E.SubjectDescription,E.StartDate,E.EndDate,E.NumberStudents,R.Description as Category FROM dbo.Course E INNER JOIN dbo.Category R ON E.IdCategory = R.Id     ").ToList();
         }
         public Course GetCourseId(int Id)
         {
@@ -25,8 +35,8 @@ namespace CastGroupCourse.Infra.Data.Repositories
         }
         public void InsertCourse(Course NewCourse)
         {
-            this.conexao.Execute(@"INSERT Course(SubjectDescription,StartDate,EndDate,NumberStudents,CategoryId) VALUES (@SubjectDescription,@StartDate,@EndDate,@NumberStudents,@CategoryId)",
-            new { SubjectDescription = NewCourse.SubjectDescription, StartDate = NewCourse.StartDate, EndDate= NewCourse.EndDate, NumberStudents= NewCourse.NumberStudents, CategoryId= NewCourse.CategoryId});
+            this.conexao.Execute(@"INSERT Course(SubjectDescription,StartDate,EndDate,NumberStudents,CategoryId) VALUES (@SubjectDescription,@StartDate,@EndDate,@NumberStudents)",
+            new { SubjectDescription = NewCourse.SubjectDescription, StartDate = NewCourse.StartDate, EndDate= NewCourse.EndDate, NumberStudents= NewCourse.NumberStudents});
         }
         public void DeleteCoursey(int Id)
         {
@@ -35,7 +45,7 @@ namespace CastGroupCourse.Infra.Data.Repositories
         public void UpdateCourse(Course NewCourse)
         {
             this.conexao.Execute("UPDATE Course SET SubjectDescription=@SubjectDescription,StartDate=@StartDate,EndDate=@EndDate,NumberStudents=@NumberStudents,CategoryId=@CategoryId WHERE Id=" + NewCourse.Id,
-           new { SubjectDescription = NewCourse.SubjectDescription, StartDate = NewCourse.StartDate, EndDate = NewCourse.EndDate, NumberStudents = NewCourse.NumberStudents, CategoryId = NewCourse.CategoryId, Id = NewCourse.Id });
+           new { SubjectDescription = NewCourse.SubjectDescription, StartDate = NewCourse.StartDate, EndDate = NewCourse.EndDate, NumberStudents = NewCourse.NumberStudents, Id = NewCourse.Id });
         }
     }
 }

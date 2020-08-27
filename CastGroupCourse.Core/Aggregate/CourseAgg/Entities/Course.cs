@@ -26,8 +26,7 @@ namespace CastGroupCourse.Core.CourseAgg.Entities
         [FromQuery(Name = "NumberStudents")]
         public int NumberStudents { get; set; }
 
-        [FromQuery(Name = "CategoryId")]
-        [Required]
-        public int CategoryId { get; set; }
+        [FromQuery(Name = "Category")]
+        public string Category { get; set; }
     }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VCngRJaZdSI3Cg+cx0H9R6U8J4eFnNarDuhG+ovP/jBZZbWxVKzaAOKRCg8dWtlP1lQSWQlZC6tSi0bAh+6N7g==",
+  "dgSpecHash": "eWcHCvMdKL/q438bQT6FeXB0sulzKCLGSjbX0hMvv3v6qQrsL3HUjRouJaqhnxlSb5I7PDDyooLSSklSagRv5Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\rtostes\\source\\repos\\CastGroupCourse\\CastGroupCourse.CrossCutting\\CastGroupCourse.CrossCutting.csproj",
   "expectedPackageFiles": [
@@ -43,6 +43,7 @@
     "C:\\Users\\rtostes\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\rtostes\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\rtostes\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\rtostes\\.nuget\\packages\\slapper.automapper\\2.0.1\\slapper.automapper.2.0.1.nupkg.sha512",
     "C:\\Users\\rtostes\\.nuget\\packages\\system.appcontext\\4.1.0\\system.appcontext.4.1.0.nupkg.sha512",
     "C:\\Users\\rtostes\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\rtostes\\.nuget\\packages\\system.collections\\4.0.11\\system.collections.4.0.11.nupkg.sha512",
