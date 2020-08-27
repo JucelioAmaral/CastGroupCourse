@@ -1,16 +1,17 @@
 ﻿using CastGroupCourse.Core.CourseAgg.Entities;
+using CastGroupCourse.Core.SharedKernel.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace CastGroupCourse.Core.CourseAgg.Interfaces.Services
 {
-   public interface ICourseService
+    public interface ICourseService
     {
         List<Course> GetCourse();
         Course GetCourseId(int Id);
-        void InsertCourse(Course NewCourse);
+        ResponseObject<Course> InsertCourse(Course NewCourse);
         void DeleteCourse(int Id);
-        void UpdateCourse(Course NewCourse);
+        ResponseObject<Course> UpdateCourse(Course NewCourse);
     }
 }

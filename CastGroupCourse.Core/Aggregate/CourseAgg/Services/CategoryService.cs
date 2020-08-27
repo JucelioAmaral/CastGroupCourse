@@ -1,9 +1,7 @@
 ﻿using CastGroupCourse.Core.CourseAgg.Entities;
 using CastGroupCourse.Core.CourseAgg.Interfaces.Repositories;
 using CastGroupCourse.Core.CourseAgg.Interfaces.Services;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace CastGroupCourse.Core.CourseAgg.Service
 {

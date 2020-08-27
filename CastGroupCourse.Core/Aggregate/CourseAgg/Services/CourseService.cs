@@ -1,9 +1,10 @@
 ﻿using CastGroupCourse.Core.CourseAgg.Entities;
 using CastGroupCourse.Core.CourseAgg.Interfaces.Repositories;
 using CastGroupCourse.Core.CourseAgg.Interfaces.Services;
+using CastGroupCourse.Core.SharedKernel.Entities;
 using System;
 using System.Collections.Generic;
-using System.Text;
+
 
 namespace CastGroupCourse.Core.CourseAgg.Service
 {
@@ -24,17 +25,40 @@ namespace CastGroupCourse.Core.CourseAgg.Service
             return _courseRepositorie.GetCourseId(Id);
         }
 
-        public void InsertCourse(Course NewCourse)
+        public ResponseObject<Course> InsertCourse(Course NewCourse)
         {
+            if (DateTime.Now > NewCourse.StartDate)
+            {
+                return new ResponseObject<Course>(false, "A data de inicio deve ser maior que a atual");
+            }
+            if (_courseRepositorie.GetCourseValidationDate(NewCourse))
+            {
+                return new ResponseObject<Course>(false, "Existe(m) curso(s) planejados(s) dentro do período informado.");
+            }
+
             _courseRepositorie.InsertCourse(NewCourse);
+
+            return new ResponseObject<Course>(true, "Criado com sucesso!", obj: NewCourse);
         }
         public void DeleteCourse(int Id)
         {
             _courseRepositorie.DeleteCoursey(Id);
         }
-        public void UpdateCourse(Course NewCourse)
+        public ResponseObject<Course> UpdateCourse(Course NewCourse)
         {
+            if (DateTime.Now > NewCourse.StartDate)
+            {
+                return new ResponseObject<Course>(false, "A data de inicio deve ser maior que a atual");
+            }
+            if (_courseRepositorie.GetCourseValidationDate(NewCourse))
+            {
+                return new ResponseObject<Course>(false, "Existe(m) curso(s) planejados(s) dentro do período informado.");
+            }
+
             _courseRepositorie.UpdateCourse(NewCourse);
+
+            return new ResponseObject<Course>(true, "Atualizado com sucesso!", obj: NewCourse);
         }
+
     }
 }

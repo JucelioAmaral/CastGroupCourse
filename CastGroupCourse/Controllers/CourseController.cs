@@ -1,10 +1,7 @@
 ﻿using CastGroupCourse.Core.CourseAgg.Entities;
 using CastGroupCourse.Core.CourseAgg.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace CastGroupCourse.Controllers{
   
@@ -28,17 +25,36 @@ namespace CastGroupCourse.Controllers{
         {
             return _courseService.GetCourseId(id);
         }
-
         [HttpPost]
-        public void PostCategory([FromBody] Course NewCourse)
+        public IActionResult PostCategory([FromBody] Course NewCourse)
         {
-            _courseService.InsertCourse(NewCourse);
-        }
+            var result = _courseService.InsertCourse(NewCourse);
+            if (result.Success)
+            {
+                return Created("/Course", result.Object);
+            }
+
+            if (result.Message != null)
+            {
+                return BadRequest(new { error = result.Message });
+            }
+            return StatusCode(500);
+        }       
 
         [HttpPut("{id}")]
-        public void PutCategory(int id, [FromBody] Course NewCourse)
-        {
-            _courseService.UpdateCourse(NewCourse);
+        public IActionResult PutCategory(int id, [FromBody] Course NewCourse)
+        {           
+            var result = _courseService.UpdateCourse(NewCourse);
+            if (result.Success)
+            {
+                return Created("/Course", result.Object);
+            }
+
+            if (result.Message != null)
+            {
+                return BadRequest(new { error = result.Message });
+            }
+            return StatusCode(500);
         }
 
         [HttpDelete("{id}")]

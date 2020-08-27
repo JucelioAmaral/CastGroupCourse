@@ -24,7 +24,10 @@ namespace CastGroupCourse.Core.CourseAgg.Entities
         public DateTime EndDate { get; set; }
 
         [FromQuery(Name = "NumberStudents")]
-        public int NumberStudents { get; set; }
+        public int NumberStudents { get; set; } 
+
+        [FromQuery(Name = "IdCategory")]
+        public int IdCategory { get; set; }
 
         [FromQuery(Name = "Category")]
         public string Category { get; set; }
