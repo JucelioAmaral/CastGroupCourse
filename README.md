@@ -27,7 +27,7 @@ npm install
 
 npm run serve
 
-*API roda porta https://localhost:5001/swagger/index.html*
+**API roda na porta https://localhost:5001/swagger/index.html**
 
 ## CI/CD
 Todo commit realizado para a master vai direto para o Azure.
