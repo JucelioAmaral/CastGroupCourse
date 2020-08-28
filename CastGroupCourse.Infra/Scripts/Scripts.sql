@@ -1,5 +1,5 @@
-﻿Create Database CastGroup
-use CastGroup
+﻿Create Database CastGroupCourse
+use CastGroupCourse
 
 Create Table Category(
     Id int IDENTITY(1,1) PRIMARY KEY,     

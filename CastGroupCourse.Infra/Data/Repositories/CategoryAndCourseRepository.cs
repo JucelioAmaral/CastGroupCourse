@@ -15,7 +15,7 @@ namespace CastGroupCourse.Infra.Data.Repositories
     {
 
         private readonly IDbConnection conexao;
-        public CategoryAndCourseRepository(IConfiguration conf) => conexao = new SqlConnection("Data Source=localhost,1433;Initial Catalog=CastGroup;Persist Security Info=False;User ID=tmds;Password=tmds;MultipleActiveResultSets=False;");
+        public CategoryAndCourseRepository(IConfiguration conf) => conexao = new SqlConnection("Server=tcp:castgroupcourse.database.windows.net,1433;Initial Catalog=CastGroupCourse;Persist Security Info=False;User ID=castgroupcourse;Password=rt@110700;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
         public List<CategoryAndCourse> CategoryAndCourse()
         {

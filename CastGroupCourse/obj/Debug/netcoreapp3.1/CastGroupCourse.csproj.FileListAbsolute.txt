@@ -41,3 +41,4 @@ C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\obj\Debug\netcorea
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\obj\Debug\netcoreapp3.1\CastGroupCourse.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\obj\Debug\netcoreapp3.1\CastGroupCourse.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\bin\Debug\netcoreapp3.1\Slapper.dll
+C:\Users\rtostes\source\repos\CastGroupCourse\CastGroupCourse\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\CastGroupCourse20200828140517 - Web Deploy\profile.arm.json
