@@ -21,17 +21,17 @@ namespace CastGroupCourse.Controllers{
         }
 
         [HttpGet("{id}")]
-        public Course GetCategoryId(int id)
+        public Course GetCourseId(int id)
         {
             return _courseService.GetCourseId(id);
         }
         [HttpPost]
-        public IActionResult PostCategory([FromBody] Course NewCourse)
+        public IActionResult PostCourse([FromBody] Course NewCourse)
         {
             var result = _courseService.InsertCourse(NewCourse);
             if (result.Success)
             {
-                return Created("/Course", result.Object);
+                return CreatedAtAction("/Course", result.Object);
             }
 
             if (result.Message != null)
@@ -42,7 +42,7 @@ namespace CastGroupCourse.Controllers{
         }       
 
         [HttpPut("{id}")]
-        public IActionResult PutCategory(int id, [FromBody] Course NewCourse)
+        public IActionResult PutCourse(int id, [FromBody] Course NewCourse)
         {           
             var result = _courseService.UpdateCourse(NewCourse);
             if (result.Success)
@@ -58,7 +58,7 @@ namespace CastGroupCourse.Controllers{
         }
 
         [HttpDelete("{id}")]
-        public void DeleteCategory(int id)
+        public void DeleteCourse(int id)
         {
             _courseService.DeleteCourse(id);
         }

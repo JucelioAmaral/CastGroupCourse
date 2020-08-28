@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CastGroupCourse", "CastGroupCourse\CastGroupCourse.csproj", "{C84F4BDE-F492-4190-9ED7-BE6400293340}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CastGroupCourse", "CastGroupCourse\CastGroupCourse.csproj", "{C84F4BDE-F492-4190-9ED7-BE6400293340}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CastGroupCourse.Core", "CastGroupCourse.Core\CastGroupCourse.Core.csproj", "{F5EADBF4-EB9A-4B30-B027-05E52AAC8E3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CastGroupCourse.Core", "CastGroupCourse.Core\CastGroupCourse.Core.csproj", "{F5EADBF4-EB9A-4B30-B027-05E52AAC8E3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CastGroupCourse.Infra", "CastGroupCourse.Infra\CastGroupCourse.Infra.csproj", "{506BA970-846A-4E8D-B454-46FE819A0E19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CastGroupCourse.Infra", "CastGroupCourse.Infra\CastGroupCourse.Infra.csproj", "{506BA970-846A-4E8D-B454-46FE819A0E19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CastGroupCourse.CrossCutting", "CastGroupCourse.CrossCutting\CastGroupCourse.CrossCutting.csproj", "{0611BC03-157C-47A4-B153-96A745A08EB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CastGroupCourse.CrossCutting", "CastGroupCourse.CrossCutting\CastGroupCourse.CrossCutting.csproj", "{0611BC03-157C-47A4-B153-96A745A08EB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CastGroupCourse.Tests", "CastGroupCourse.Tests\CastGroupCourse.Tests.csproj", "{FF3EE114-C37F-455D-9F38-7A719B8B9E55}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{0611BC03-157C-47A4-B153-96A745A08EB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0611BC03-157C-47A4-B153-96A745A08EB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0611BC03-157C-47A4-B153-96A745A08EB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF3EE114-C37F-455D-9F38-7A719B8B9E55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF3EE114-C37F-455D-9F38-7A719B8B9E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF3EE114-C37F-455D-9F38-7A719B8B9E55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF3EE114-C37F-455D-9F38-7A719B8B9E55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
