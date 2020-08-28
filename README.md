@@ -2,7 +2,9 @@
 
 Api feita em .Net core 3.1 usando Dapper como Micro ORM, Swagger para documentação da Api, SQLServer como SGBD.
 Foi utilizada uma arquitetura em camadas baseada na onion.
-Front-End utilizando Vue.js
+Foram feitos testes unitários usando XUnit.
+Front-End utilizando Vue.js.
+
 
 ## Pré requisitos
 
